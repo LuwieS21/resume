@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <!-- icons -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    
+    <title>My Resume</title>
+</head>
+
+<body>
+    <!--Luwie Salgado  -->
+    <!--Left Section - sidebar   -->
+
+    <section class="sidebar">
+        <img src="images/myresume_image.jpg" alt="profile picture" width="370px">
+
+        <div class="content">
+            <!--Contacts-->
+            <div class="contacts">
+                <h3>Contacts</h3>
+
+                <p>
+                    <span class="material-symbols-outlined">
+                    phonelink_ring
+                    </span> 
+                    
+                    <a class="phone-number" href="tel:+639977508525">+63 997 750 8525 </a>
+
+                </p>
+
+                <p>
+                    
+                    <span class="material-symbols-outlined">
+                    mail
+                    </span>
+                <a class="email" href="mailto:luwie.salgado@outlook.com">luwie.salgado@outlook.com</a>
+                </p>
+
+                <p id="home_pin">
+                    <span class="material-symbols-outlined">
+                        home_pin
+                    </span>
+                
+                    <a href="#"  class="email">Santo Tomas, Batangas, Philippines</a>
+                
+                </p>
+
+            </div>
+
+            <!--TechSkills-->
+            <div class="skills">
+                <h3>Tech Skills</h3>
+                <ul>
+                    <li>DNS management</li>
+                    <li>Email Management</li>
+                    <li>SSL</li>
+                    <li>cPanel</li>
+                    <li>HTML / CSS / JS / PHP</li>
+              
+                </ul>
+            </div>
+
+
+            <!--Soft Skills-->
+            <div class="skills">
+                <h3>Soft Skills</h3>
+                <ul>
+                    <li>Self-motivation</li>
+                    <li>Critical Thinking</li>
+                    <li>Problem solving</li>
+                    <li>Teamwork</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="education">
+            <h3>Education</h3>
+            <h4>Polytechnic University of the Philippines</h4>
+        
+            <h5>Bachelor in Hotel and Restaurant Management</h5>
+        
+            <p>Sta.Mesa, Manila. Philippines
+            </p>
+            <br><br>
+
+            <button id="downloadButton">Download Resume</button>
+        
+        </div>
+
+        
+    </section>
+
+    <!--Right Section-->
+
+    <section class="main-content">
+        <!--Summary Section-->
+        <div class="summary">
+            <h4>Web Hosting Expert / Technical Support</h4>
+            <h2>Luwie Salgado</h2>
+            <p> With years of experience in the web hosting industry, I possess extensive knowledge in offering web hosting services. I
+            am proficient in DNS management, email setup on various applications and devices, SSL implementation, FTP protocols, and
+            backup solutions. Additionally, I excel in troubleshooting common issues with WordPress, providing reliable and
+            efficient solutions. My technical skills and hands-on experience ensure smooth and secure web hosting operations.</p>
+        </div>
+
+       
+        <!--Work Experience Section-->
+        <div class="work-experience">
+            <h3>Work Experience</h3>
+
+
+            <div class="first | experience justify">
+                <h4>Web Hosting Expert / Technical Support
+                    <span class="subtitle"> HostPapa </span>
+                </h4>
+
+                <p> February 2024 - up to now
+                    <span> | </span> Remote
+                </p>
+                <ul>
+                    <li>Set up email on various devices and troubleshoot issues related to sending/receiving, storage, spam filters, and
+                    configuration settings via calls, chat, and tickets. </li>
+                    <li>Diagnose and resolve domain issues by checking DNS records, making necessary changes, and educating end users on DNS
+                    functionality.</li>
+                    <li>Troubleshoot website issues, including SSL configuration, htaccess files, file manager, routing, directories, and
+                    account status, primarily over calls with occasional chat and ticket support.</li>
+                </ul>
+            </div>   
+
+
+            <!---2nd Work Experience-->
+
+            <div class="second | experience justify">
+                <h4>Web Hosting Support
+                    <span class="subtitle"> Sutherland Global Services </span>
+                </h4>
+
+                <p>October 2021 - March 2023
+                    <span> | </span> Remote <span> | </span> Go Daddy
+                </p>
+
+                <ul>
+                    <li>Effectively guided customers through the process of setting up purchased products and services.
+                    </li>
+                    <li>Troubleshoot and resolve issues related to domain configuration, website errors, database
+                        connections, FTP, and SSL and more. </li>
+                    <li>Fostered collaboration with other departments and higher level support teams to effectively
+                        resolve customer issues. </li>
+                </ul>
+            </div>
+
+            <!---3rd Work Experience-->
+
+            <div class="third | experience justify">
+                <h4>Customer Service Representative
+                    <span class="subtitle"> Task Us </span>
+                </h4>
+
+                <p>March 2021 - August 2021
+                    <span> | </span> Remote <span> | </span> Sephora
+                </p>
+
+                <ul>
+                    <li> Provided exceptional customer service by efficiently and effectively assisting customers with
+                        their account-related requests such as unlocking accounts and updating account information.
+                    </li>
+                    <li>Facilitated order placement, payment processing, and order tracking while addressing
+                        order-related requests and issues. </li>
+                    <li>Offered comprehensive information regarding products and services, including promotions, to
+                        customers. </li>
+
+                        <a href="secondpage.html" target="_blank" id="last_a">
+                        <p id="last_li"> See more work experiences <span class="material-symbols-outlined">
+                            double_arrow
+                        </span> </p> </a>
+                </ul>
+            </div>
+
+        </div>
+        
+
+    </section>
+    
+    <script>
+        // Function to trigger the download of both PDF files
+        function downloadResumes() {
+            // Create an array of file URLs to download
+            const fileUrls = ['my_resume_web2.pdf', 'my_resume_web1.pdf'];
+
+            // Loop through the file URLs and trigger downloads
+            fileUrls.forEach(url => {
+                const link = document.createElement('a');
+                link.href = url;
+                link.target = '_blank'; // Open in a new tab
+                link.download = url.split('/').pop(); // Set the file name
+                link.click();
+            });
+        }
+
+        // Add a click event listener to the download button
+        document.getElementById('downloadButton').addEventListener('click', downloadResumes);
+    </script>
+
+
+</body>
+
+</html>
